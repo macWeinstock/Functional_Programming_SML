@@ -2,6 +2,7 @@
 
 CIS 425, Spring 2020, Assignment 2
 Due: Monday 13, 11:59PM
+
 Important Introduction:
 In this homework, we will work with JSON data in SML. We will manipulate it and print it. We will also
 play with some real data.
@@ -18,6 +19,7 @@ the U-district used in this assignment.
 No previous experience with JSON is expected or needed, but if you are curious or confused, the ultimate
 reference is at https://tools.ietf.org/html/rfc7159. We will make some modest simplifying assumptions about JSON. Therefore, we will not quite be RFC compliant, but we will be close, and it wouldn’t be
 too hard to get there.
+
 A JSON value is one of seven things:
 1. a number (floating point, e.g., 3.14 or -0.2)
 2. a string (e.g., "hello")
@@ -144,6 +146,7 @@ very many lines of code.
   in problem 14).
   
 3 In the next four problems we will convert from json to string, the key step in printing JSON values.
+
 16. Write a function concat_with that takes a separator string and a list of strings, and returns the string
   that consists of all the strings in the list concatenated together, separated by the separator. The
   separator should be only between elements, not at the beginning or end. Use ML’s ^ operator for
@@ -163,25 +166,43 @@ Evaluating a correct homework solution should generate these bindings or more ge
 the bindings from the code provided to you.
 
 val make_silly_json = fn : int -> json
+
 val assoc = fn : ’’a * (’’a * ’b) list -> ’b option
+
 val dot = fn : json * string -> json option
+
 val one_fields = fn : json -> string list
+
 val no_repeats = fn : string list -> bool
+
 val recursive_no_field_repeats = fn : json -> bool
+
 val count_occurrences = fn : string list * exn -> (string * int) list
+
 val string_values_for_field = fn : string * json list -> string list
+
 val filter_field_value = fn : string * string * json list -> json list
+
 val large_event_clearance_description_histogram = (*...*) : (string * int) list
+
 val large_hundred_block_location_histogram = (*...*) : (string * int) list
+
 val forty_third_and_the_ave_reports = (*...*) : json list
+
 val forty_third_and_the_ave_event_clearance_description_histogram =
 (*...*) : (string * int) list
+
 val nineteenth_and_forty_fifth_reports = (*...*) : json list
+
 val nineteenth_and_forty_fifth_event_clearance_description_histogram =
 (*...*) : (string * int) list
+
 val concat_with = fn : string * string list -> string
+
 val quote_string = fn : string -> string
+
 val real_to_string_for_json = fn : real -> string
+
 val json_to_string = fn : json -> string
 
 Of course, generating these bindings does not guarantee that your solutions are correct. Test your functions:
