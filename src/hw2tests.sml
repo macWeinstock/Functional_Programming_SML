@@ -1,4 +1,6 @@
-(* CSE 341, Homework 2 Tests *)
+(*HW2 CIS 425*)
+(*Author: Mac Weinstock*)
+(*Usage: $sml hw2.sml*)
 
 use "hw2.sml";
 

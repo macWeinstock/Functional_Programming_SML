@@ -1,4 +1,6 @@
-(* CSE 341, HW2 Provided Code *)
+(*HW2 CIS 425*)
+(*Author: Mac Weinstock*)
+(*Usage: $sml hw2.sml*)
 
 (* main datatype definition we will use throughout the assignment *)
 datatype json =
